@@ -1,8 +1,10 @@
 <?php
-// $_POST['zipcode'] holds the value of the submitted form parameter "zipcode"
-// Now zipcode holds that value, with any leading or trailing spaces removed
-// Complain if the zip code length is not 5 characters long
-if(strlen(trim($_POST['zipcode'])) != 5){
-    print 'Please enter a zip code that is 5 Characters long';
+if($_POST['email'] == 'johndoe@gmail.com'){
+    print 'Welcome John Doe';
+}
+
+// Compare strings case insensitively
+if (strcasecmp($_POST['email'], 'johndoe@gmail.com') == 0 ){
+    print 'Welcome back John Doe';
 }
 ?>
