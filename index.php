@@ -10,9 +10,24 @@
 <title>PHP Says Hello</title>
 </head>
 <body>
-<?php 
-    print "Hello World";
-?>
+<div class="container">
+<div class="row">
+<div class="col-md-6" style="margin-top: 30px;">
+    <form method="POST" action="sayhello.php">
+        <div class="form-group row">
+            <label for="user" class="col-md-2 col-form-label">Username</label>
+            <div class="col-md-10" style="padding-left: 0px;">
+            <input type="text" name="user" class="form-control" id="user" aria-describedby="emailHelp" placeholder="Enter username">
+            </div>     
+        </div>
+        <div class="form-group row">                
+            <button type="submit" class="btn btn-primary col-md-2 offset-md-2">Say Hello</button>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
